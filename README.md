@@ -18,6 +18,24 @@
 - Veri günlük hayattaki her türlü bilgiye denen kapsayıcı bir kavramdır. Bir sürü veri türü var fakat bu yazımda kafanızı bunlarla doldurmak istemiyorum :).
 - Örnek verecek olursak, "Caddede 3 araba var." bu bir veridir hatta, "1. araba kırmızı, 2. araba beyaz, 3. araba siyah renginde." bu da bir veridir. "Caddenin genişliği 10 metre.", "Caddenin ortasında yaya geçidi var." bunların hepsi bir veri. Fakat işe yaramaz veriler. Tabii ki yapacağımız uygulamanın amacına göre bu işe yaramaz veriler belki altın madeni gibi değerli olabilir.
 
+### Doğruluk
+- Doğruluk, programa verdiğimiz inputun ne kadar doğru olduğunu gösteren sayısal ifade. (Mesela 10 adet kedi fotoğrafı verdik ve tahmin et dedik, 7sine kedi 3üne de vaşak dedi diyelim bu halde doğruluk oranımız: 70% oluyor.)
+
+### Denetimli & denetimsiz öğrenme
+- Denetimli öğrenme, veriyi etiketleyerek veriyoruz ve makineye öğretiyoruz.
+- Denetimsiz öğrenme, veriyi etiketlemeyerek vererek kendi kendine sınıflandırmasını istiyoruz. Aslıdna isminde her ne kadar denetimsiz öğrenme yazsa bile en son işlemde bir insan tarafından denetimleniyor.
+
+### Modelin eğitilmesi
+- Makinelerin öğrenmesi ve gerçek hayata geçirildiğinde düzgün sonuçlar vermesi için yapılan öğretilmedir.
+- Şöyle eğitiyoruz, elimizde bir miktar verimiz var ve bu verileri programa verdiğimizde programda bunları doğru bir şekilde tahmin etmeye çalışıyor, eğer yanlış tahmin ederse bazı değişiklikler yaparak doğruluğunu arttırmaya çalışıyoruz.
+
+### Modelin test edilmesi
+- Modeli eğittikten sonra gerçek bir kullanıcı gibi test etmeye başlıyoruz ve cevapların nasıl olduğunu bakıyoruz.
+- Burada yanlış bir adım yaptık aslında modeli eğittikten hemen sonra test ettik. Bu modelimizi ezberlemeye iter ve, hiç görmediği verilerde doğruluğu çok düşer.
+
+### Modelin ön test edilmesi
+- Modeli eğittikten sonra modeli hiç görmediği verilerle ön test. Modelimizde istediğimiz doğruluk oranını elde ettikten sonra gerçek bir kullanıcı gibi test ediyoruz.
+
 ### Makine öğrenmesi alanında kullanılan programlama dilleri
 - Makine bilimi alanı her gün çok hızlı bir şekilde gelişiyor. Bunun yanı sıra programlama dilerinde makine öğrenimi, derin öğrenme (makine öğrenmesinin alt dalı) kütüphaneleri hızlı bir şekilde genişliyor. Makine öğrenmesi için bir çok dil kullanılabilir fakat önerilenler, Python, Julia, R(daha çok veri analizi için kullanılır).
 **Pythonun avantajları ve dezavantajları**
@@ -37,10 +55,6 @@
 2. *PyTorch*: Facebook tarafından geliştirilen, güzel bir kütüphane.
 3. *TensorFlow*: Google tarafından geliştirilen, makine ve derin öğrenme algoritmaları için kullanılan ve en popüler kütüphane.
 4. *Keras*: TensorFlow'un üstüne inşa edilmiştir ve daha gelişmiş özelliklere sahiptir.
-- Tabii ki bir sürü kütüphane var fakat ben size 4 tanesini göstermek istedim.
+- Tabii ki bir sürü kütüphane var fakat ben size 4 tanesini göstermek istedim. Araştırarak diğerlerine de bakabilirsiniz.
 
-## Yapay zeka alanı hakkında yorumum
-- Yapay zeka elbette büyük avantajlar getirdi bize fakat ne kadar avantaj getirdiyse o kadar da dezavantaj getirdi. Belki hayalinizde ressam olmak vardı  fakat gelecekte ressamlığın bir değeri kalmayabilir. Yapay zekanın resim çizme yeteneği gün geçtikçe katlanarak artıyor bu da sanat alanına büyük bir darbeyi vuruyor.
-- Aynı zamanda askeri olarak da bir sürü problemi getiriyor. Askeri olarak üretilen yapay zekalar insanların yerlerini almaya başladığında ne biliyoruz belki bizim komutlarımızı dinlemeyecekler. Ve bu devleti büyük tehlikeye sokuyor.
-- Etik açıdan bazıları için etik değildir fakat ben öyle düşünmüyorum, ancak yapay zeka ne zaman insanlığın kötülüğüne yapılmaya başlarsa o zaman etik olmaz.
-- Farkettiyseniz dünya teknolojisi arttıkça tek tip bir insana ihtiyaç kalıyor o da, matematik, yapay zeka alanı gibi alanlar. Bunla beraber dünyadaki mesleklerin hemen hemen yarısının yok olacağı, yerine yeni 1 milyona yakın iş imkanı sunacağı ön görülüyor. (25 yıl içinde)
+ Bu yazımda size makine öğrenimi alanını az da olsa anlatmak istedim, umarım faydalı olmuştur sağlıcakla kalın!
